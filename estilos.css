@@ -29,44 +29,20 @@ body {
     margin-left: 0;  
 }
 
-/* Estilos para el logo */
-#logo {
-    max-width: 90px;  
-    margin-right: 20px;  
-}
-
-
 /* Estilos para el navbar */
-.navbar-custom {
-color: #000;
-position: fixed;
-  top: 0;
-  width: 100%;
-  padding-right: 1 px;
-  padding-left: 1 px;
-  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con opacidad */
-  z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
-}
-
-#navbartodo {
+#navbar{
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 1000;
     color:#000;
 }
 
-#dropm1 {
-    color:#000;  
-}
-
-#dropm2 {
+#navbard, #navbartodo, #navbarCollapse, #navbardrop, #dropm2, #dropm1  {
     color:#000;
-
 }
 
-/*Estilo card*/
-
-#contacto {
-    background-color: #ffffff;
-    color: #000;
-}
 /* Estilo a nivel de clase */
 .resultado {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -89,32 +65,80 @@ position: fixed;
     padding-top: 20px; 
 }
 
-#tit1col{
-font-size: 18;
+/* Estilo de las fotos de las columnas*/
 
+.wrapper {
+    height: 300px; 
+    width: 300px; 
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0px solid #fff; 
+    padding: 0; 
+    margin-top: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.wrapper img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+    object-fit: cover;
+}
+    
+.wrapper img:hover {
+    transform: scale(1,1);
+    filter: grayscale(0%);
+    }
+
+
+h3, p {
+    text-align: center; 
+    margin: 0;
+    padding: 5px;
+}
+
+.btn{
+    background-color: transparent;
+    color:#fff;
+    text-align: center; 
+    margin: 0;
+    padding: 5px;
 }
 
 
-  #columnasinfo{
+.circle-image {
+    border-radius: 50%;
+    height: 20 px;
+    width: 5 px;
+    margin-top: 40 px; 
+}
+
+#columnasinfo{
     background-color: #000;
     color: #ffffff;
-  }
+}
 
-  #imagenr {
-    padding: 10px;
-    margin-top: 40px; 
-  }
+/*Estilo card*/
 
+#contacto {
+    background-color: #ffffff;
+    color: #000;
 
-  /*Estilo del botón de la card*/
+}
+/*Estilo del botón de la card*/
 
-  #botonenviar {
+#botonenviar {
     background-color: #ffffff;
     color: #000000;
     border-color: #202020;
-  }
+}
 
-  #search {
+#search {
     background-color: #ffffff;
     color: #000;
 }
@@ -128,4 +152,4 @@ font-size: 18;
     margin-right: 0px; 
     color: #ffffff;
     padding: 36;
-  }
+}
